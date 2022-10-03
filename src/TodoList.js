@@ -9,7 +9,7 @@ const TodoList =({todoList, onRemoveTodo}) => {
         {todoList.map((todo ) =>
 
            <TodoListItem
-                key={todo.id}
+                key={todo.fields.Title}
                title={todo.title}
         
                onRemoveTodo={onRemoveTodo}

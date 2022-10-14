@@ -7,10 +7,11 @@ function TodoForm() {
     } 
     return(
         <form>
-            <label type="htmlFor" id="todoTitle"> Title </label>
+            <label type="htmlFor" id="todoTitle">Title</label>
             <input type= "text" id="todoTitle" onChange={handleChange}></input>
             <button>Add</button>
         </form>
+        
     )
 }
 

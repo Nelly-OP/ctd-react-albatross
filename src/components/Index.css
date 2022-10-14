@@ -1,0 +1,29 @@
+*{
+    margin: 5px;
+    padding: 0px 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(157, 91, 244);
+}
+
+body{
+    color: rgb(252, 248, 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 15px;
+    padding: 15px, 15px;
+}
+
+h1{
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 445px) {
+    form {
+      width: 95%;
+    }
+}

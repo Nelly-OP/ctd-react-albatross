@@ -8,6 +8,7 @@ import style from "./AddTodoForm.module.css";
 const AddTodoForm = ({onAddTodo}) => {
     const [todoTitle, setTodoTitle]= useState("")
 console.log(AddTodoForm);
+
    const handleTitleChange = (event) => {
          const newTodoTitle = event.target.value;
          setTodoTitle(newTodoTitle);
@@ -24,9 +25,9 @@ console.log(AddTodoForm);
              <form onSubmit={handleAddTodo}>
                  <InputWithLabel
                  todoTitle={todoTitle}
-                 onChange={handleTitleChange}
-                 children
-                 inputRef
+                 handleTitleChange={handleTitleChange}
+                //  children
+                //  inputRef
             >
                     <span className={style.title}>Title:</span>
                 </InputWithLabel>

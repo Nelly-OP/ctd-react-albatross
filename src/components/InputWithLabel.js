@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react"
 import style from "./InputWithLabel.module.css"; 
 import PropTypes from "prop-types";
 
-const InputWithLabel = (props) => {
+const InputWithLabel = ({todoTitle, handleTitleChange, children}) => {
 
 const inputRef = useRef();
 
@@ -13,13 +13,13 @@ useEffect(() => {
 return ( 
 
 <div>
-    <label htmlFor ="todoTitle">{props.children}</label>
+    <label htmlFor ="todoTitle">{children}</label>
     <input className={style.input}
-     id={props.id}
+     id="todoTitle"
      type="text"
-     name={props.name}
-     value={props.value}
-     onChange={props.onChange}
+     name="title"
+     value={todoTitle}
+     onChange={handleTitleChange}
      ref={inputRef}
 
     />
